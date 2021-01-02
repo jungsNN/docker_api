@@ -17,7 +17,7 @@ func main() {
 
     configService := service.ConfigService{
         Config: &config,
-        Location: "config.yaml"
+        Location: "config.yaml",
     }
 
     go configService.Watch(time.Second * 30)
