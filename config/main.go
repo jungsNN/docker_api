@@ -26,5 +26,5 @@ func main() {
         panic(err)
     }
 
-    fmt.Println(config.Get("service.registry.state")
+    fmt.Println(config.Get("service.registry.state"))
 }
