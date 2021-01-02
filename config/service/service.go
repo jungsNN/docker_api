@@ -5,7 +5,7 @@ import (
     "log"
     "time"
 
-    "github.com/jungsnn/covid-19-forecast/config/domain"
+    "github.com/jungsnn/docker_api/config/domain"
 )
 
 type ConfigService struct {

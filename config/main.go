@@ -6,7 +6,9 @@ import (
 
     "github.com/jungsnn/muxinator"
 
-    "github.com/jungsnn/"
+    "github.com/jungsnn/docker_api/config/controller"
+    "github.com/jungsnn/docker_api/config/domain"
+    "github.com/jungsnn/docker_api/config/service"
 
 )
 
