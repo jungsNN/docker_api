@@ -6,7 +6,7 @@ import (
     "net/http"
 
     "github.com/gorilla/mux"
-    "github.com/jungsnn/"
+    "github.com/jungsnn/docker_api/config/domain"
 )
 
 // Controller exports the handlers for the endpoints
