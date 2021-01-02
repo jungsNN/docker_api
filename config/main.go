@@ -12,21 +12,19 @@ import (
 
 )
 
+
 func main() {
     config := domain.Config{}
 
-    configService := service.ConfigService{
-        Config: &config,
-        Location: "config.yaml",
+    data, err := ioutil.ReadFile("config.yaml")
+    if err != nil {
+        panic(err)
     }
 
-    go configService.Watch(time.Second * 30)
-
-    c := controller.Controller{
-        Config: &config,
+    err = config.SetFromBytes(data)
+    if err != nil {
+        panic(err)
     }
 
-    router := muxinator.NewRouter()
-    router.Get("/read/{serviceName}", c.ReadConfig)
-    log.Fatal(router.ListenAndServe(":8080"))
+    fmt.Println(config.Get("service.registry.state")
 }

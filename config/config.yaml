@@ -4,6 +4,6 @@ base:
     host: redis
     port: 6379
 
-  service.registry.device:
+  service.registry.state:
     database: /data/states.db
     apiGateway: nextWeekForecast
