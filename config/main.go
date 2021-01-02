@@ -1,14 +1,9 @@
 package main
 
 import (
-    "log"
-    "time"
-
-    "github.com/jungsnn/muxinator"
-
-    "github.com/jungsnn/docker_api/config/controller"
+    "io/ioutil"
     "github.com/jungsnn/docker_api/config/domain"
-    "github.com/jungsnn/docker_api/config/service"
+
 
 )
 
