@@ -1,6 +1,7 @@
 package main
 
 import (
+    "fmt"
     "io/ioutil"
     "github.com/jungsnn/docker_api/config/domain"
 
